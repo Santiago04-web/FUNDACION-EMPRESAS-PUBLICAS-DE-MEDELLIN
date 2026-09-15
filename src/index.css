@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Glassmorphism utilities */
+.glass-header {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+.custom-gradient-bg {
+  background: radial-gradient(circle at top right, rgba(88, 195, 116, 0.12), transparent 40%),
+              radial-gradient(circle at bottom left, rgba(14, 70, 47, 0.08), transparent 40%);
+}
